@@ -1,0 +1,12 @@
+<%- include("partials/blogHeader") -%>
+<h1 class="delete-title">Delete Posts</h1>
+<form class="delete-form" action="/delete" method="post">
+  <% posts.forEach(function(e) { %>
+    <div class="delete">
+      <input type="checkbox" name="<%= e.title %>" value="checked">
+      <h2 class="delete-item"><%= e.title %></h1>
+    </div>
+  <% }); %>
+  <button class="btn btn-lg btn-warning delete-button" type="submit" name="button">Enter</button>
+</form>
+<%- include("partials/blogFooter") -%>

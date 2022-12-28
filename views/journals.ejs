@@ -1,0 +1,14 @@
+<%- include("partials/blogHeader") -%>
+<h1>Home</h1>
+<p><%= homeStartingContent %></p>
+<% let chopString = ""; %>
+<% posts.forEach(function(e) { %>
+  <% chopString = e.content.slice(0, 100) %>
+  <div class="post">
+    <h1><%= e.title %></h1>
+    <br>
+    <p class="chopped-content"><%= chopString %>......</p>
+    <a href="/posts/<%= e.title %>">Read more</a>
+  </div>
+<% }); %>
+<%- include("partials/blogFooter") -%>

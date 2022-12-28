@@ -1,0 +1,180 @@
+h1 {
+  display: inline-block;
+  margin-top: 0;
+  border-bottom: 2px solid grey;
+  margin-bottom: 15px;
+}
+
+p {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Journals Page */
+.post {
+  margin-top: 40px;
+}
+
+.chopped-content {
+  display: inline-block;
+}
+
+/* Composition */
+#composition-title {
+  font-size: 5rem;
+  border: none;
+}
+
+textarea, input {
+  font-size: 2rem;
+  outline: none !important;
+  border: 2px solid #96b2b5;
+  display: block;
+}
+
+textarea:focus, input:focus{
+  border-radius: 5px;
+  border: 3px solid #96b2b5;
+}
+
+.submit-button {
+  outline: none;
+  background-color: white;
+  border: 2px solid #96b2b5;
+  border-radius: 3px;
+  color: black;
+  width: 170px;
+  height: 70px;
+  font-size: 2.8rem;
+}
+
+.submit-button:hover {
+  background-color: #b6d6d9;
+  border: 2px solid #96b2b5;
+  color: white;
+}
+
+.submit-button:focus {
+  background-color: #b6d6d9;
+  border: 2px solid #96b2b5;
+  color: white;
+}
+
+/* Delete Page */
+.delete-title {
+}
+
+input[type = "checkbox"] {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.delete-item {
+  display: inline-block;
+}
+
+.delete-button {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+
+/* File Deleted Page */
+.gone-title {
+  border: none;
+  font-size: 5rem;
+}
+
+/* Post Page */
+.content {
+  white-space: pre-wrap;
+}
+
+.corner-vertical-1 {
+  position: absolute;
+  top: 89px;
+  right: 0;
+  border-right: 2px solid grey;
+  height: 0;
+}
+
+.corner-horizontal-1 {
+  position: absolute;
+  top: 89px;
+  right: 0;
+  border-top: 2px solid grey;
+  width: 0;
+}
+
+.corner-vertical-2 {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  border-left: 2px solid grey;
+  height: 0;
+}
+
+.corner-horizontal-2 {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  border-bottom: 2px solid grey;
+  width: 0;
+}
+
+.corner-vertical-3 {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  border-right: 2px solid grey;
+  height: 0;
+}
+
+.corner-horizontal-3 {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  border-bottom: 2px solid grey;
+  width: 0;
+}
+
+/* Failure Page */
+.failure {
+  margin: auto 200px;
+}
+
+#failure-title {
+  margin-top: 50px;
+  border: none;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 6rem;
+}
+
+.failure-message {
+  display: inline-block;
+  margin: 20px auto 30px;
+}
+
+.failure-form {
+  display: inline-block;
+}
+
+.failure-button {
+  font-size: 3rem;
+}
+
+.failure-image {
+  width: 45%;
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  .failure-image {
+    display: none;
+  }
+  #failure-title {
+    margin: 0;
+  }
+}
